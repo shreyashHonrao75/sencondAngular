@@ -1,80 +1,59 @@
-<h1 class="bg-success text-white p-2 text-center text-capitalize">
+<h1 class="bg-primary text-white table create p-4">
     {{title}}
 </h1>
 
-<div class="container mt-5 text-capitalize">
- <div class="row">
-<div class="col-6 offset-md-3 text-center">
- <ul class="list-group">
- <li *ngFor="let skill of skills" class="list-group-item bg-dark text-white">
-    {{skill}}
-</li>
- </ul>
- </div>
-    </div>
-
-    <div class="row mt-5 text-center">
-        
-        <!-- <h1 class="text-dark p-4">
-            {{names}}
-        </h1> -->
-        <div class="col-md-4">
-            <ul class="list-group">
-                <li *ngFor="let names of name" class="list-group-item bg-dark text-white">
-                    {{names}}
-                </li>
-            </ul>
-        </div>
-
-        <div class="col-md-4">
-            <ul class="list-group">
-                <li *ngFor="let change of changes" class="list-group-item bg-dark text-white">
-                    {{change}}
-                </li>
-            </ul>
-        </div>
-
-
-        <div class="col-md-4">
-            <ul class="list-group  text-center">
-                <li *ngFor="let skill of odds  " class="list-group-item bg-dark text-white">
-                    {{skill}}
-                </li>
-            </ul>
-     </div>
-
-       
-     <div class="col-6 offset-md-3 my-5">
-        <ul class="list-group text-center">
-        <li *ngFor="let skill of subjects" class="list-group-item bg-dark text-white">
-                {{skill}}
-            </li>
-        </ul>
-    </div>
-
-    </div>  
-
-
-
-    <!-- <h1 class="text-dark p-4">
-        {{change}}
-    </h1> -->
-   
-       
-    
-   
-        
-            <!-- <h1 class="text-dark p-4">
-                {{odd}}
-            </h1> -->
-      
-          
-                <!-- <h1 class="text-dark p-4">
-                    {{subject}}
-                </h1> -->
-               
-                 
-
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            
+            <table class=" bg-secondary text-white table table-bordered">
+                <thead>
+                    <tr>
+                         <th>Sr NO</th>
+                         <th>First Name</th>
+                         <th>Last Name</th>
+                         <th>Email</th>
+                         <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let person of persons; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{person.fname}}</td>
+                        <td>{{person.lname}}</td>
+                        <td>{{person.email}}</td>
+                        <td>{{person.Contact}}</td>
                 
-
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="col-12">
+            
+            <table class=" bg-dark text-white table table-bordered">
+                <thead>
+                    <tr>
+                         <th>Sr NO</th>
+                         <th>Cars</th>
+                         <th>company Name</th>
+                         <th>KmDriven</th>
+                         <th>Prices</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let car of cars; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{car.car}}</td>
+                        <td>{{car.Company}}</td>
+                        <td>{{car.kmDriven}}</td>
+                        <td>{{car.price}}</td>
+                
+                    </tr>
+                </tbody>
+            </table>
            
+        </div>
+       
+    </div>
+</div>
