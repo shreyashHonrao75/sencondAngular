@@ -54,6 +54,33 @@
             </table>
            
         </div>
+
+        
+        <div class="col-12">
+            
+            <table class=" bg-info text-white table table-bordered">
+                <thead>
+                    <tr>
+                         <th>Sr NO</th>
+                         <th>Cars</th>
+                         <th>company name</th>
+                         <th>Prices</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let bike of bikes; let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{bike.BikeName}}</td>
+                        <td>{{bike.company}}</td>
+                        <td>{{bike.price}}</td>
+                        
+        
+   
+                    </tr>
+                </tbody>
+            </table>
+           
+        </div>
        
     </div>
 </div>

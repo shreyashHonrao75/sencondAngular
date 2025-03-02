@@ -11,3 +11,9 @@ export interface Icars {
     kmDriven : number,
     price : string
 }
+
+export interface Ibike {
+    BikeName : string,
+    company : string,
+    price :  number,
+}

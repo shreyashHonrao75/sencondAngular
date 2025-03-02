@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Subject } from 'rxjs';
-import { Icars, Iperson } from './shared/models/persons';
+import { Ibike, Icars, Iperson } from './shared/models/persons';
 
 @Component({
   selector: 'app-root',
@@ -89,7 +89,31 @@ export class AppComponent {
     },
 
   ]
+   
+  bikes : Array<Ibike> =[
+    {
+       BikeName : "Unicorn",
+       company : "Honda",
+       price :  139262,
+    },
+    {
+      BikeName : "sp125",
+      company : "Honda",
+      price :  109424,
+    },
+    {
+     BikeName : "Xtreme",
+     company : "Hero",
+     price :  115946,
+   },
+   {
+     BikeName : "pulsar",
+     company : "Bajaj",
+     price :  125289,
+   },
+  ]
 
+  
   
 }
 
