@@ -1,86 +1,293 @@
-<h1 class="bg-primary text-white table create p-4">
-    {{title}}
+<h1 class="bg-primary text-white table p-4">
+    table 
 </h1>
 
 <div class="container mt-5">
     <div class="row">
         <div class="col-12">
-            
-            <table class=" bg-secondary text-white table table-bordered">
+            <table class="bg-secondary text-white table table-bordered">
                 <thead>
-                    <tr>
-                         <th>Sr NO</th>
-                         <th>First Name</th>
-                         <th>Last Name</th>
-                         <th>Email</th>
-                         <th>Contact</th>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>Name</th>
+                        <th>country</th>
+                        <th>odiDebut</th>
+                        <th>matches</th>
+                        <th>runs</th>
+                        <th>highestScore</th>
+                        <th>centuries</th>
+                        <th>fifties</th>
+                        <th>battingAverage</th>
+                        <th> wickets</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let person of persons; let i = index">
-                        <td>{{i + 1}}</td>
-                        <td>{{person.fname}}</td>
-                        <td>{{person.lname}}</td>
-                        <td>{{person.email}}</td>
-                        <td>{{person.Contact}}</td>
-                
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="col-12">
-            
-            <table class=" bg-dark text-white table table-bordered">
-                <thead>
-                    <tr>
-                         <th>Sr NO</th>
-                         <th>Cars</th>
-                         <th>company Name</th>
-                         <th>KmDriven</th>
-                         <th>Prices</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let car of cars; let i = index">
-                        <td>{{i + 1}}</td>
-                        <td>{{car.car}}</td>
-                        <td>{{car.Company}}</td>
-                        <td>{{car.kmDriven}}</td>
-                        <td>{{car.price}}</td>
-                
-                    </tr>
-                </tbody>
-            </table>
-           
-        </div>
+                    <tr *ngFor="let std of std; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{std.name}}</td>
+                        <td>{{std.country}}</td>
+                        <td>{{std.odiDebut}}</td>
+                        <td>{{std.matches}}</td>
+                        <td>{{std.runs}}</td>
+                        <td>{{std.highestScore}}</td>
+                        <td>{{std.centuries}}</td>
+                        <td>{{std.fifties}}</td>
+                        <td>{{std.battingAverage}}</td>
+                        <td>{{std.wickets}}</td>
 
-        
-        <div class="col-12">
-            
-            <table class=" bg-info text-white table table-bordered">
-                <thead>
-                    <tr>
-                         <th>Sr NO</th>
-                         <th>Cars</th>
-                         <th>company name</th>
-                         <th>Prices</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let bike of bikes; let i = index">
-                        <td>{{i + 1}}</td>
-                        <td>{{bike.BikeName}}</td>
-                        <td>{{bike.company}}</td>
-                        <td>{{bike.price}}</td>
-                        
-        
-   
                     </tr>
                 </tbody>
             </table>
-           
         </div>
-       
+        <div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>Name</th>
+                        <th>country</th>
+                        <th>odiDebut</th>
+                        <th>matches</th>
+                        <th>runs</th>
+                        <th>highestScore</th>
+                        <th>centuries</th>
+                        <th>fifties</th>
+                        <th>battingAverage</th>
+                        <th> wickets</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let second of seconds; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{second.name}}</td>
+                        <td>{{second.country}}</td>
+                        <td>{{second.odiDebut}}</td>
+                        <td>{{second.matches}}</td>
+                        <td>{{second.runs}}</td>
+                        <td>{{second.highestScore}}</td>
+                        <td>{{second.centuries}}</td>
+                        <td>{{second.fifties}}</td>
+                        <td>{{second.battingAverage}}</td>
+                        <td>{{second.wickets}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let table of tables; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{table.id}}</td>
+                        <td>{{table.name}}</td>
+                        <td>{{table.email}}</td>
+                        <td>{{table.role}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>category</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{product.id}}</td>
+                        <td>{{product.name}}</td>
+                        <td>{{product.price}}</td>
+                        <td>{{product.category}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>orderId</th>
+                        <th>user</th>
+                        <th>amount</th>
+                        <th>status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let order of orders; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{order.orderId}}</td>
+                        <td>{{order.user}}</td>
+                        <td>{{order.amount}}</td>
+                        <td>{{order.status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>department</th>
+                        <th>salary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let  employee of  employees; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{ employee.id}}</td>
+                        <td>{{ employee.name}}</td>
+                        <td>{{ employee.department}}</td>
+                        <td>{{ employee.salary}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>author</th>
+                        <th>year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let book of books; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{book.id}}</td>
+                        <td>{{book.title}}</td>
+                        <td>{{book.author}}</td>
+                        <td>{{book.year}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>brand</th>
+                        <th>model</th>
+                        <th>year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let   cars of cars let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{cars.id}}</td>
+                        <td>{{cars.brand}}</td>
+                        <td>{{cars.model}}</td>
+                        <td>{{cars.year}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>user</th>
+                        <th>amount</th>
+                        <th>type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let transaction of transactions; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{transaction.id}}</td>
+                        <td>{{transaction.user}}</td>
+                        <td>{{transaction.amount}}</td>
+                        <td>{{transaction.type}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let table of tables; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{table.id}}</td>
+                        <td>{{table.name}}</td>
+                        <td>{{table.email}}</td>
+                        <td>{{table.role}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let table of tables; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{table.id}}</td>
+                        <td>{{table.name}}</td>
+                        <td>{{table.email}}</td>
+                        <td>{{table.role}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="col-12">
+            <table class="bg-secondary text-white table table-bordered">
+                <thead>
+                  <tr>
+                        <th>sr.no</th>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>director</th>
+                        <th>year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let Movie of Movies ; let i = index">
+                        <td>{{ i + 1}}</td>
+                        <td>{{Movie.id}}</td>
+                        <td>{{Movie.title}}</td>
+                        <td>{{Movie.director}}</td>
+                        <td>{{Movie.year}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
     </div>
 </div>

@@ -1,19 +1,27 @@
 export interface Iperson {
-    fname : string,
-    lname : string,
-    email : string,
-    Contact : number
+    name: string,
+    country: string,
+    odiDebut: string,
+    matches: number,
+    runs: number,
+    highestScore: number,
+    centuries: number,
+    fifties: number,
+    battingAverage: number,
+    wickets: number
 }
 
-export interface Icars {
-    car : string,
-    Company : string,
-    kmDriven : number,
-    price : string
+export interface Iperson {
+    name: string,
+    country: string,
+    odiDebut: string,
+    matches: number,
+    runs: number,
+    highestScore: number,
+    centuries:number,
+    fifties: number,
+    battingAverage: number,
+    wickets: number
 }
 
-export interface Ibike {
-    BikeName : string,
-    company : string,
-    price :  number,
-}
+
